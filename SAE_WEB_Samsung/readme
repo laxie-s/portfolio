@@ -1,0 +1,32 @@
+Sustainable Mobility Web Platform
+Project Description
+This static website was developed as part of the SAE 1.05 and 1.06 project in the Computer Science BUT program. It aims to promote sustainable mobility within a company by offering services such as carpooling and the rental of eco-friendly vehicles.
+
+The site is fully developed using HTML and CSS, following the educational requirements of the project. It is designed to be simple, intuitive, and responsive, ensuring a seamless experience for all users.
+
+Main Features
+Home Page:
+
+General presentation of the service.
+Introduction to the concept of sustainable mobility.
+Carpooling Page:
+
+Connects employees to share personal or professional trips.
+Eco-Friendly Vehicle Rental Page:
+
+Information about renting bicycles, electric scooters, and electric cars.
+Graphic Design:
+
+A validated mockup prior to development.
+A clean and modern layout.
+Technical Constraints
+Technologies used: HTML and CSS only.
+Exclusion of JavaScript or any other dynamic technology.
+The website must remain static and self-contained.
+Project Structure
+index.html: Home page.
+carpooling.html: Page dedicated to the carpooling service.
+rental.html: Page for eco-friendly vehicle rentals.
+style.css: Global stylesheet.
+Primary Objective
+To create a functional and visually appealing platform that adheres to technical constraints while meeting the sustainable mobility needs defined in the project.
