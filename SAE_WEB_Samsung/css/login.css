@@ -1,0 +1,267 @@
+/* Fonts */
+@font-face {
+    font-family: 'classic';
+    src: url('../font/SamsungOne-400.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sous';
+    src: url('../font/SamsungOne-700.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titre';
+    src: url('../font/SamsungSharpSans-Bold.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Titre, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: #171717;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-link img {
+    height: 25px;
+    margin-left: 14.5rem;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 555px;
+    text-align: center;
+    margin-top: 140px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Header */
+.form-header h1 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input Styling */
+.input-label {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    width: 100%;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-bottom: 1px solid #2d79f3;
+}
+
+/* Custom Checkbox */
+.custom-checkbox-container {
+    display: flex; /* Active Flexbox pour aligner les éléments */
+    align-items: center; /* Centre verticalement */
+    justify-content: flex-start; /* Aligne horizontalement à gauche */
+    gap: 10px; /* Espacement entre la case et le texte */
+    width: 100%; /* Prend toute la largeur du conteneur parent */
+}
+
+.custom-checkbox {
+    width: 20px; /* Taille de la checkbox */
+    height: 20px;
+    border: 2px solid #aaa; /* Couleur de bordure */
+    border-radius: 50px; /* Coins légèrement arrondis */
+    background-color: transparent; /* Fond par défaut */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox-container input[type="checkbox"] {
+    display: none; /* Cache la case native */
+}
+
+.custom-checkbox-container input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #1E90FF; /* Couleur de fond quand cochée */
+    border-color: #1E90FF; /* Couleur de bordure quand cochée */
+}
+
+.custom-checkbox-container input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: '✔'; /* Symbole de coche */
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Label Text Styling */
+.label-text {
+    font-size: 16px; /* Taille du texte */
+    color: #fff; /* Couleur du texte */
+    font-family: classic, sans-serif; /* Police personnalisée */
+}
+
+/* Submit Button */
+.submit-btn {
+    align-items: center;
+    background-color: #0484FC;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: sous, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin-top: 20px;
+}
+
+.submit-btn:disabled {
+    cursor: not-allowed;
+    background-color: #555;
+    color: #aaa;
+    opacity: 0.6;
+}
+
+/* Links Container */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: classic, sans-serif;
+}
+
+.link {
+    color: #8C8C8C;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #1E90FF;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #4B4B4B;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.social-btn img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.social-btn:hover {
+    background-color: #616161;
+}
+
+/* Stay Connected */
+.stay-connected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    object-fit: contain;
+}

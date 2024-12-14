@@ -1,0 +1,104 @@
+/* Fonts */
+@font-face {
+  font-family: 'classic';
+  src: url('../font/SamsungOne-400.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sous';
+  src: url('../font/SamsungOne-700.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titre';
+  src: url('../font/SamsungSharpSans-Bold.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../img/covoit/blurred_image.webp") no-repeat center center/cover;
+}
+
+.choice-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.choice-container h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: "Titre", sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.choice-btn {
+  flex: 1;
+  padding: 15px 20px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.choice-btn:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+.choice-btn:first-child {
+  background: #28a745;
+}
+
+.choice-btn:first-child:hover {
+  background: #218838;
+}
+
+.choice-description {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+

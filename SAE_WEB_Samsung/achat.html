@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Modal</title>
+  <link rel="stylesheet" href="css/achat.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+
+<header class="header">
+  <!-- Logo Samsung à gauche -->
+  <div class="header-left">
+    <a href="index.html">
+      <img src="img/head/samsung.svg" alt="Samsung Logo">
+    </a>
+  </div>
+
+  <!-- Liens à droite -->
+  <div class="header-right">
+    <a href="achat.html"><img src="img/head/achat.png" alt="achat"></a>
+    <a href="covoiturage.html"><img src="img/head/covoiturage.png"><i class="icon-carpolling"></i></a>
+    <a href="location.html"><img src="img/head/vtr.jpg"><i class="icon-location"></i></a>
+    <a href="login.html"><img src="img/head/login.png"><i class="icon-user"></i></a>
+  </div>
+</header>
+
+<body>
+<div class="modal">
+  <form class="form">
+    <div class="payment--options">
+      <button name="paypal" type="button">
+        <img src="img/sms_pay.webp" alt="PayPal Logo" width="60" height="20">
+      </button>
+      <button name="samsung-pay" type="button">
+        <img src="img/Paypal_2014_logo.png" alt="Samsung Pay Logo" width="60" height="20">
+      </button>
+      <button name="google-pay" type="button">
+        <img src="img/Google_Pay_Logo.svg.png" alt="Google Pay Logo" width="60" height="20">
+      </button>
+    </div>
+    <div class="separator">
+      <div class="line"></div>
+      <p>or pay using credit card</p>
+      <div class="line"></div>
+    </div>
+    <div class="credit-card-info--form">
+      <div class="input_container">
+        <label for="cardholder" class="input_label">Card Holder Full Name</label>
+        <input id="cardholder" class="input_field" type="text" placeholder="Enter your full name">
+      </div>
+      <div class="input_container">
+        <label for="cardnumber" class="input_label">Card Number</label>
+        <input id="cardnumber" class="input_field" type="number" placeholder="0000 0000 0000 0000">
+      </div>
+      <div class="input_container">
+        <label class="input_label">Expiry Date / CVV</label>
+        <div class="split">
+          <input class="input_field" type="text" placeholder="MM/YY">
+          <input class="input_field" type="number" placeholder="CVV">
+        </div>
+      </div>
+    </div>
+    <button class="purchase--btn">Checkout</button>
+  </form>
+</div>
+
+</body>
+
+</html>

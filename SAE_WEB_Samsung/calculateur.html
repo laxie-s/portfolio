@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur CO₂</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/calculateur.css">
+</head>
+
+
+<header class="header">
+  <!-- Logo Samsung à gauche -->
+  <div class="header-left">
+    <a href="index.html">
+      <img src="img/head/samsung.svg" alt="Samsung Logo">
+    </a>
+  </div>
+
+  <!-- Liens à droite -->
+  <div class="header-right">
+    <a href="achat.html"><img src="img/head/achat.png" alt="achat"></a>
+    <a href="covoiturage.html"><img src="img/head/covoiturage.png"><i class="icon-carpolling"></i></a>
+    <a href="location.html"><img src="img/head/vtr.jpg"><i class="icon-location"></i></a>
+    <a href="login.html"><img src="img/head/login.png"><i class="icon-user"></i></a>
+  </div>
+</header>
+
+
+
+<body>
+<div class="calculator-container">
+  <div class="calculator-header">
+    <h1>Calculateur CO₂ Évité</h1>
+    <p>Comparez les émissions d'une Renault Arkana hybride avec une voiture thermique.</p>
+  </div>
+
+  <form action="#" method="get">
+    <div class="form-group">
+      <label for="km">Kilomètres parcourus :</label>
+      <input type="number" id="km" name="km" placeholder="Entrez les kilomètres" required>
+    </div>
+    <button type="submit" class="calculate-btn">Calculer</button>
+
+
+    <div class="result">
+      <p>
+        Résultat approximatif basé sur des valeurs par défaut :
+        <strong>30 kg de CO₂ évité</strong>
+      </p>
+    </div>
+
+  </form>
+</div>
+</body>
+</html>

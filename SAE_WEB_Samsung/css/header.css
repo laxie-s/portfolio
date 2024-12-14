@@ -1,0 +1,165 @@
+/* Fonts */
+@font-face {
+  font-family: 'classic';
+  src: url('../font/SamsungOne-400.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sous';
+  src: url('../font/SamsungOne-700.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titre';
+  src: url('../font/SamsungSharpSans-Bold.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Style de l'en-tête */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Éloigne les éléments : logo à gauche, liens à droite */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  height: 60px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Logo Samsung à gauche */
+.header-left {
+  display: flex;
+  align-items: center;
+  font-size: 20px; /* Augmentez la taille */
+}
+
+.header-left img {
+  max-height: 50px; /* Ajustez la hauteur maximale */
+  width: auto; /* Conserve les proportions */
+}
+
+/* Liens à droite */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacement uniforme entre les liens */
+  margin-left: auto; /* Pousse les liens vers la droite */
+}
+
+.header-right a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-size: 20px; /* Taille des icônes */
+}
+
+.header-right img {
+  height: 30px; /* Ajustez selon vos besoins */
+  width: auto;
+  margin-right: 10px; /* Espace entre l'image et le texte */
+  vertical-align: middle; /* Aligne les icônes au milieu du texte */
+  background-color: #fff;
+}
+
+/* Style pour le lien survolé */
+.header-right a:hover {
+  color: #0078d7; /* Couleur au survol */
+  text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* Style général du footer */
+footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+  font-family: 'classic', sans-serif;
+}
+
+footer details {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer summary {
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer summary:hover {
+  background-color: #0056b3;
+}
+
+footer .accordion-content {
+  padding: 10px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #555;
+}
+
+footer .accordion-content h3 {
+  font-family: 'sous', sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+footer .accordion-content p {
+  font-family: 'classic', sans-serif;
+  margin-bottom: 10px;
+}
+
+footer .accordion-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer .accordion-content a:hover {
+  text-decoration: underline;
+}
+
+/* Animation d'ouverture et de fermeture */
+details[open] summary {
+  background-color: #0056b3;
+}
+
+details[open] .accordion-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}

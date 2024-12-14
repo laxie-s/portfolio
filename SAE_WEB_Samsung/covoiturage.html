@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choix Covoiturage</title>
+  <link rel="stylesheet" href="css/header.css">
+
+  <link rel="stylesheet" href="css/covoiturage.css">
+</head>
+<header class="header">
+  <!-- Logo Samsung à gauche -->
+  <div class="header-left">
+    <a href="index.html">
+      <img src="img/head/samsung.svg" alt="Samsung Logo">
+    </a>
+  </div>
+
+  <!-- Liens à droite -->
+  <div class="header-right">
+    <a href="achat.html"><img src="img/head/achat.png" alt="achat"></a>
+    <a href="covoiturage.html"><img src="img/head/covoiturage.png"><i class="icon-carpolling"></i></a>
+    <a href="location.html"><img src="img/head/vtr.jpg"><i class="icon-location"></i></a>
+    <a href="login.html"><img src="img/head/login.png"><i class="icon-user"></i></a>
+  </div>
+</header>
+<body>
+<div class="choice-container">
+  <h1>Choisissez votre rôle</h1>
+  <div class="image-container">
+    <img src="img/covoit/conducteur.webp" alt="Conducteur">
+    <img src="img/covoit/client.webp" alt="Client">
+  </div>
+  <div class="button-container">
+    <button class="choice-btn" onclick="window.location.href='conducteur.html';">Conducteur</button>
+    <button class="choice-btn" onclick="window.location.href='client.html';">Client</button>
+  </div>
+  <p class="choice-description">
+    En tant que conducteur, proposez des trajets à partager.<br>
+    En tant que client, trouvez un covoiturage adapté à vos besoins.
+  </p>
+</div>
+</body>
+</html>

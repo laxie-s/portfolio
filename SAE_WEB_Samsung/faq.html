@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Projet SAE</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .faq-header h1 {
+            font-size: 2rem;
+            color: #222;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .faq-answer p {
+            margin: 0;
+        }
+
+        .faq-item input[type="checkbox"] {
+            display: none;
+        }
+
+        .faq-item input[type="checkbox"]:checked ~ .faq-answer {
+            display: block;
+        }
+
+        .faq-item input[type="checkbox"]:checked + .faq-question::after {
+            content: '-';
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Éloigne les éléments : logo à gauche, liens à droite */
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            height: 60px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+
+        /* Logo Samsung à gauche */
+        .header-left {
+            display: flex;
+            align-items: center;
+            font-size: 20px; /* Augmentez la taille */
+        }
+
+        .header-left img {
+            max-height: 50px; /* Ajustez la hauteur maximale */
+            width: auto; /* Conserve les proportions */
+        }
+
+        /* Liens à droite */
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espacement uniforme entre les liens */
+            margin-left: auto; /* Pousse les liens vers la droite */
+        }
+
+        .header-right a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+            font-size: 20px; /* Taille des icônes */
+        }
+
+        .header-right img {
+            height: 30px; /* Ajustez selon vos besoins */
+            width: auto;
+            margin-right: 10px; /* Espace entre l'image et le texte */
+            vertical-align: middle; /* Aligne les icônes au milieu du texte */
+            background-color: #fff;
+        }
+
+        /* Style pour le lien survolé */
+        .header-right a:hover {
+            color: #0078d7; /* Couleur au survol */
+            text-decoration: underline; /* Ajoute un soulignement au survol */
+        }
+
+    </style>
+</head>
+<header class="header">
+    <!-- Logo Samsung à gauche -->
+    <div class="header-left">
+        <a href="index.html">
+            <img src="img/head/samsung.svg" alt="Samsung Logo">
+        </a>
+    </div>
+
+    <!-- Liens à droite -->
+    <div class="header-right">
+        <a href="covoiturage.html"><img src="img/head/covoiturage.png"><i class="icon-carpolling"></i></a>
+        <a href="location.html"><img src="img/head/vtr.jpg"><i class="icon-location"></i></a>
+        <a href="login.html"><img src="img/head/login.png"><i class="icon-user"></i></a>
+    </div>
+</header>
+
+<body>
+<div class="faq-container">
+    <div class="faq-header">
+        <h1>Foire Aux Questions</h1>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq1">
+        <label class="faq-question" for="faq1">Quel est le but de ce projet ?</label>
+        <div class="faq-answer">
+            <p>Le but de ce projet est de développer une section FAQ dynamique et interactive pour un site web dans le cadre des exigences de la SAE.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq2">
+        <label class="faq-question" for="faq2">Quelles technologies sont utilisées ?</label>
+        <div class="faq-answer">
+            <p>Ce projet utilise HTML et CSS pour structurer et styliser la section FAQ. Aucun JavaScript n'est utilisé pour garantir la simplicité et l'accessibilité.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq3">
+        <label class="faq-question" for="faq3">Comment puis-je modifier cette FAQ ?</label>
+        <div class="faq-answer">
+            <p>Vous pouvez modifier le fichier HTML pour ajouter ou supprimer des éléments FAQ. Ajustez les styles dans la section CSS pour changer l'apparence.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq4">
+        <label class="faq-question" for="faq4">Quels sont les objectifs de la SAE ?</label>
+        <div class="faq-answer">
+            <p>Les objectifs incluent la maîtrise des bases du développement web, la structuration de contenu et la mise en page responsive.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq5">
+        <label class="faq-question" for="faq5">Quelle est la durée estimée pour ce projet ?</label>
+        <div class="faq-answer">
+            <p>Le projet est prévu pour être complété en deux semaines, avec des étapes intermédiaires pour la validation.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq6">
+        <label class="faq-question" for="faq6">Comment puis-je contacter l'équipe du projet ?</label>
+        <div class="faq-answer">
+            <p>Vous pouvez nous contacter via l'email de l'équipe : contact@projet-sae.fr.</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

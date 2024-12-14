@@ -1,0 +1,138 @@
+body {
+    font-family: "classic ", sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.modal {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment--options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.payment--options button {
+    height: 55px;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.payment--options button:hover {
+    transform: scale(1.05);
+}
+
+.payment--options button img {
+    width: 100px; /* Largeur fixe */
+    height: auto; /* Hauteur ajustée automatiquement */
+    max-height: 40px; /* Hauteur maximale pour éviter l'étirement */
+    object-fit: contain; /* Conserver le ratio des images */
+}
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8b8e98;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.separator .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #e8e8e8;
+}
+
+.credit-card-info--form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input_label {
+    font-size: 10px;
+    color: #8b8e98;
+    font-weight: 600;
+}
+
+.input_field {
+    height: 40px;
+    padding: 0 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+    background-color: #f2f2f2;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input_field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.split {
+    display: flex;
+    gap: 15px;
+}
+
+.split input {
+    flex: 1;
+}
+
+.purchase--btn {
+    height: 55px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(180deg, #363636 0%, #1b1b1b 50%, #000000 100%);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.purchase--btn:hover {
+    box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset input number styles */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input_field[type=number] {
+    -moz-appearance: textfield;
+}

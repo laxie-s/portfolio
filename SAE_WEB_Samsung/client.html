@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte et Demande</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/client.css">
+</head>
+
+
+<header class="header">
+    <!-- Logo Samsung à gauche -->
+    <div class="header-left">
+        <a href="index.html">
+            <img src="img/head/samsung.svg" alt="Samsung Logo">
+        </a>
+    </div>
+
+    <!-- Liens à droite -->
+    <div class="header-right">
+        <a href="achat.html"><img src="img/head/achat.png" alt="achat"></a>
+        <a href="covoiturage.html"><img src="img/head/covoiturage.png"><i class="icon-carpolling"></i></a>
+        <a href="location.html"><img src="img/head/vtr.jpg"><i class="icon-location"></i></a>
+        <a href="login.html"><img src="img/head/login.png"><i class="icon-user"></i></a>
+    </div>
+</header>
+<body>
+<div class="map-container">
+
+
+    <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999168733134!2d2.292292515674436!3d48.85884407928792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdf77e330d1%3A0x3a5d61e9b1e2f4b8!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1632936746330!5m2!1sen!2sfr"
+            allowfullscreen=""
+            loading="lazy">
+    </iframe>
+    <div class="client-request"><p>
+        <label for="depart"><strong>Départ :</strong></label>
+        <input type="text" id="depart" name="depart">
+    </p>
+        <p>
+            <label for="arrivee"><strong>Arrivée :</strong></label>
+            <input type="text" id="arrivee" name="arrivee">
+        </p>
+        <p>
+            <label for="heure"><strong>Heure :</strong></label>
+            <input type="time" id="heure" name="heure" >
+        </p>
+    </div>
+</div>
+
+
+
+<div class="content-section">
+    <div class="box">
+        <h3>Demandes des clients</h3>
+        <div class="demande">
+            <p><strong>Départ :</strong> Nantes</p>
+            <p><strong>Arrivée :</strong> Rennes</p>
+            <p><strong>Heure :</strong> 09:00</p>
+        </div>
+        <div class="demande">
+            <p><strong>Départ :</strong> Lyon</p>
+            <p><strong>Arrivée :</strong> Grenoble</p>
+            <p><strong>Heure :</strong> 11:30</p>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <h3>Trajets des chauffeurs</h3>
+        <div class="demande">
+            <p><strong>Départ :</strong> Marseille</p>
+            <p><strong>Arrivée :</strong> Nice</p>
+            <p><strong>Heure :</strong> 15:00</p>
+        </div>
+        <div class="demande">
+            <p><strong>Départ :</strong> Bordeaux</p>
+            <p><strong>Arrivée :</strong> Toulouse</p>
+            <p><strong>Heure :</strong> 16:00</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
